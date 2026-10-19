@@ -1,0 +1,20 @@
+{
+  "name": "@flxapps/adbax",
+  "version": "0.1.0",
+  "description": "Drive an Android device or emulator through its accessibility tree instead of screenshots and pixel coordinates.",
+  "keywords": ["android", "adb", "emulator", "uiautomator", "accessibility", "automation", "testing", "cli", "agent"],
+  "license": "Apache-2.0",
+  "author": "Felix Heller",
+  "homepage": "https://github.com/flxapps/adbax#readme",
+  "repository": { "type": "git", "url": "git+https://github.com/flxapps/adbax.git" },
+  "bugs": { "url": "https://github.com/flxapps/adbax/issues" },
+  "type": "module",
+  "bin": { "adbax": "bin/adbax.js" },
+  "files": ["bin/", "src/", "server/adbax-server.jar", "skill/", "docs/", "NOTICE"],
+  "engines": { "node": ">=18" },
+  "publishConfig": { "access": "public" },
+  "scripts": {
+    "test": "node --test",
+    "build:server": "sh server/build.sh"
+  }
+}
